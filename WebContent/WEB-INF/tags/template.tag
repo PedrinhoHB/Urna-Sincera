@@ -31,8 +31,8 @@
 					href="<c:url value="/candidato/listar"/>">Candidatos</a></li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search"
-					placeholder="Search" aria-label="Search">
+				<input name="id" class="form-control mr-sm-2" type="search"
+					placeholder="Pesquise por ID" aria-label="Search">
 				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
 			</form>
 		</div>

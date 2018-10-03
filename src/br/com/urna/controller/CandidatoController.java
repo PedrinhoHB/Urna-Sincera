@@ -26,8 +26,13 @@ public class CandidatoController {
 	}
 
 	@GetMapping("listar")
-	public ModelAndView listar(RedirectAttributes r) {
+	public ModelAndView listar() {
 		return new ModelAndView("candidato/lista").addObject("candidatos", dao.listar());
+	}
+
+	@GetMapping("pesquisar")
+	public ModelAndView pesquisar(int id) {
+		return new ModelAndView("candidato/pesquisa").addObject("candidato", dao.pesquisar(id));
 	}
 
 	@Transactional
