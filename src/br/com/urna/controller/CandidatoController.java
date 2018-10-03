@@ -48,6 +48,6 @@ public class CandidatoController {
 			e.printStackTrace();
 		}
 		r.addFlashAttribute("msg", "Candidato excluido!");
-		return "redirect:candidato/listar";
+		return "redirect:/candidato/listar";
 	}
 }
